@@ -1,4 +1,4 @@
-import {last} from "./last";
+import {lastItem} from "./last-item";
 
 /** Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements. */
 export const chunk = <T>(array: T[], size = 1): T[][] => {
@@ -13,7 +13,7 @@ export const chunk = <T>(array: T[], size = 1): T[][] => {
             j = 0;
         }
 
-        last(chunks)!.push(item);
+        lastItem(chunks)!.push(item);
         j++;
     }
 

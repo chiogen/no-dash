@@ -1,6 +1,6 @@
 // Array
-export * from './array/first';
-export * from './array/last';
+export * from './array/first-item';
+export * from './array/last-item';
 export * from './array/chunk';
 export * from './array/compact';
 
