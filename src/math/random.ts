@@ -1,11 +1,15 @@
-export const getRandomFloat = (max: number) =>
-    Math.random() * max;
+export function getRandomFloat(max: number) {
+    return Math.random() * max;
+}
 
-export const getRandomFloatInRange = (min: number, max: number) =>
-    min + getRandomFloat(max - min);
+export function getRandomFloatInRange(min: number, max: number) {
+    return min + getRandomFloat(max - min);
+}
 
-export const getRandomInt = (max: number) =>
-    Math.floor(Math.random() * max);
+export function getRandomInt(max: number) {
+    return Math.floor(Math.random() * max);
+}
 
-export const getRandomIntInRange = (min: number, max: number) =>
-    min + getRandomInt(max - min);
+export function getRandomIntInRange(min: number, max: number) {
+    return min + getRandomInt(max - min);
+}

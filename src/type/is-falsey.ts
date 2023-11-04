@@ -1,3 +1,5 @@
-type Falsey = false | 0 | undefined | null | "";
+export type Falsey = false | 0 | undefined | null | "";
 
-export const isFalsey = (input: unknown): input is Falsey => !input;
+export function isFalsey(input: unknown): input is Falsey {
+    return !input;
+}

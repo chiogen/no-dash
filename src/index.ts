@@ -1,9 +1,9 @@
-// Array
-export * from './array/first-item';
-export * from './array/last-item';
-export * from './array/chunk';
-export * from './array/compact';
-export * from './array/random-item';
+// List
+export * from './list/first-item';
+export * from './list/last-item';
+export * from './list/chunk';
+export * from './list/exclude-falsy';
+export * from './list/random-item';
 
 // Math
 export * from './math/clamp';
