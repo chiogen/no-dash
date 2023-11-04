@@ -6,7 +6,7 @@
     "declaration": true,
     "outDir": "build",
     "noImplicitAny": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
   },
   "include": [
     "src/**/*.ts"
