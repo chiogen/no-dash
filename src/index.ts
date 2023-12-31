@@ -5,6 +5,9 @@ export * from './list/chunk';
 export * from './list/exclude-falsy';
 export * from './list/random-item';
 
+// Map
+export * from './map/index-map';
+
 // Math
 export * from './math/clamp';
 export * from './math/round';
