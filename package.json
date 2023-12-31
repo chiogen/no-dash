@@ -12,6 +12,6 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "chiogen <iwashier@gmail.com>",
   "license": "MIT"
 }
