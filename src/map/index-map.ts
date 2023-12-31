@@ -92,7 +92,7 @@ export class IndexMap<K, V> {
         this.store.entries.length = 0;
     }
 
-    public delete(key: K): boolean {
+    public delete(key: K, optimizeIndices = true): boolean {
 
         const hash = this.hashBuilder(key);
         const index = this.store.indices.get(hash);
@@ -102,7 +102,9 @@ export class IndexMap<K, V> {
 
         this.store.indices.delete(hash);
         this.store.entries[index] = undefined;
-        this.rebuildIndices();
+
+        if (optimizeIndices)
+            this.rebuildIndices();
     }
 
     public rebuildIndices() {
