@@ -1,6 +1,12 @@
 
 type CreateHash<K> = (k: K) => string;
 
+/**
+ * Collection of values, using a hash value as key.
+ * 
+ * Internally this class uses a Map<string, K>, not a Set<K>.
+ * This is required to remain iterable.
+ */
 export class HashSet<K> {
 
     readonly #store = new Map<string, K>();
