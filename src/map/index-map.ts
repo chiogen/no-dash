@@ -24,7 +24,7 @@ export class IndexMap<K, V> {
 
         this.store = {
             indices: new Map(),
-            entries: new Array()
+            entries: []
         };
 
         this.hashBuilder = hashBuilder;
