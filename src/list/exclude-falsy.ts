@@ -1,8 +1,8 @@
-import { isTruly, Truly } from "../type/is-truly";
+import { isTruly, Truly } from "../type/is-truly.js";
 
 type CompactedList<T> = Truly<T>[];
 
-export function excludeFalsy<T>(input: IterableIterator<T>): CompactedList<T> {
+export function excludeFalsy<T>(input: Iterable<T>): CompactedList<T> {
     const result = [] as CompactedList<T>;
 
     for (const item of input)

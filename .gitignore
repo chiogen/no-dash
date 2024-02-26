@@ -132,5 +132,8 @@ dist
 # Webstorm files
 .idea/
 
+# Ava files
+.tsimp
+
 # Project build files
 build/
