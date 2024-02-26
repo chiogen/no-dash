@@ -1,8 +1,7 @@
 import { lastItem } from "./last-item";
 
-
 /** Creates an list of elements split into groups the length of size. If list can't be split evenly, the final chunk will be the remaining elements. */
-export function chunk<T>(input: IterableIterator<T>, size = 1): T[][] {
+export function chunk<T>(input: Iterable<T>, size = 1): T[][] {
     const chunks = [] as T[][];
 
     let j = 0;
